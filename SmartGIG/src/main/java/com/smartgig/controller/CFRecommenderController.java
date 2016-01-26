@@ -14,8 +14,9 @@ public class CFRecommenderController {
 	public ModelAndView test() {
 		System.out.println("CFRecommenderController --> test()");
 		CFRecommender.cfRecommenderTest();
+		
 		ModelAndView model = new ModelAndView();
-		model.setViewName("index");
+		model.setViewName("home");
 		return model;
 	}
 }

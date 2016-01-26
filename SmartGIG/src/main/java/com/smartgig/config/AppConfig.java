@@ -33,13 +33,14 @@ public class AppConfig extends WebMvcConfigurerAdapter{
 //		return builder.buildSessionFactory();
 //	}
 
-	private Properties getHibernateProperties() {
-		Properties prop = new Properties();
-		prop.put("hibernate.format_sql", "true");
-		prop.put("hibernate.show_sql", "true");
-		prop.put("hibernate.dialect", "org.hibernate.dialect.MySQL5Dialect");
-		return prop;
-	}
+/** JZAH 01-21-16 **/
+//	private Properties getHibernateProperties() {
+//		Properties prop = new Properties();
+//		prop.put("hibernate.format_sql", "true");
+//		prop.put("hibernate.show_sql", "true");
+//		prop.put("hibernate.dialect", "org.hibernate.dialect.MySQL5Dialect");
+//		return prop;
+//	}
 
 //	@Bean(name = "dataSource")
 //	public BasicDataSource dataSource() {
@@ -63,11 +64,12 @@ public class AppConfig extends WebMvcConfigurerAdapter{
 	public InternalResourceViewResolver viewResolver() {
 		InternalResourceViewResolver viewResolver = new InternalResourceViewResolver();
 		viewResolver.setViewClass(JstlView.class);
+		
 		viewResolver.setPrefix("/WEB-INF/");
 		//viewResolver.setPrefix("/WEB-INF/views/");
 		//viewResolver.setPrefix("/WEB-INF/views/Admin/");
 		//viewResolver.setPrefix("/WEB-INF/views/E-commerce/");
-		//viewResolver.setPrefix("/WEB-INF/views/SmartGIG/");
+		//viewResolver.setPrefix("/WEB-INF/views/SmartGIG/");	
 		viewResolver.setSuffix(".jsp");
 		return viewResolver;
 	}

@@ -76,9 +76,9 @@ public class Preprocessing {
 		String sentence = "";
 		int flagspace = 0;
 		for (int i = 0; i < post.length(); i++) {
-			if (post.charAt(i) == ' ' || (int)post.charAt(i)==10) {
+			if (post.charAt(i) == ' ') {
 				if (flagspace == 0) {
-					sentence += " ";
+					sentence += post.charAt(i) + "";
 					flagspace = 1;
 				}
 			} else {

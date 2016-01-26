@@ -59,17 +59,17 @@ public class SaveTokens {
 				// if ang noun parehas sa gi-negate
 				if (nn.gov().equals(n.gov())) {
 					if (!(isPositive(b[0]))) {
-						accepted = new AcceptedTokenModel("0", userID, morph.stem(a[0]), 1, 0);
+						accepted = new AcceptedTokenModel("0", morph.stem(userID), a[0], 1, 0);
 						atm.add(accepted);
 					} else {
-						accepted = new AcceptedTokenModel("0", userID, morph.stem(a[0]), 0, 1);
+						accepted = new AcceptedTokenModel("0", morph.stem(userID), a[0], 0, 1);
 						atm.add(accepted);
 					}
 				} else if (!(isPositive(b[0]))) {
-					accepted = new AcceptedTokenModel("0", userID, morph.stem(a[0]), 0, 1);
+					accepted = new AcceptedTokenModel("0", morph.stem(userID), a[0], 0, 1);
 					atm.add(accepted);
 				} else {
-					accepted = new AcceptedTokenModel("0", userID, morph.stem(a[0]), 1, 0);
+					accepted = new AcceptedTokenModel("0", morph.stem(userID), a[0], 1, 0);
 					atm.add(accepted);
 				}
 			}
@@ -77,10 +77,10 @@ public class SaveTokens {
 			// if walay negation
 			if (neg.isEmpty()) {
 				if (!(isPositive(b[0]))) {
-					accepted = new AcceptedTokenModel("0",  userID, morph.stem(a[0]), 0, 1);
+					accepted = new AcceptedTokenModel("0", morph.stem(userID), a[0], 0, 1);
 					atm.add(accepted);
 				} else {
-					accepted = new AcceptedTokenModel("0",  userID, morph.stem(a[0]), 1, 0);
+					accepted = new AcceptedTokenModel("0", morph.stem(userID), a[0], 1, 0);
 					atm.add(accepted);
 				}
 			}
@@ -129,15 +129,15 @@ public class SaveTokens {
 				AcceptedTokenModel t = atm.get(i);
 				if (b[0].equals(t.getWord())) {
 					isAdded = 1;
-					accepted = new AcceptedTokenModel("0", userID, morph.stem(a[0]), t.getPositiveCount(), t.getNegativeCount());
+					accepted = new AcceptedTokenModel("0", userID, a[0], t.getPositiveCount(), t.getNegativeCount());
 					atm.add(accepted);
 				}
 			}
 
 			if (isAdded == 0) {
-				accepted = new AcceptedTokenModel("0", userID, morph.stem(a[0]), 1, 0);
+				accepted = new AcceptedTokenModel("0", userID, a[0], 1, 0);
 				atm.add(accepted);
-				accepted = new AcceptedTokenModel("0", userID, morph.stem(b[0]), 1, 0);
+				accepted = new AcceptedTokenModel("0", userID, b[0], 1, 0);
 				atm.add(accepted);
 			}
 		}
