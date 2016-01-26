@@ -43,7 +43,7 @@ public class Postagger {
         List<TypedDependency> tdl = gs.typedDependenciesCCprocessed();
         
         SaveTokens st = new SaveTokens();
-        st.tokenSaving(tdl, "10204951167327586");
+        st.tokenSaving(tdl, userID);
     }
 
 

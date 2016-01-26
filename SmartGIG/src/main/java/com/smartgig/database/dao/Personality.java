@@ -5,36 +5,37 @@ public class Personality {
 	private String personalityId;
 	private String fbId;
 	private String token;
-	private int isMusicLover;
-	private int isSportsFan;
-	private int isFoodie;
-	private int isFashionFiend;
-	private int isBookWorm;
-	private int isOutdoorEntusiast;
-	private int weight;/**total weight of the token*/
+	private boolean isMusicLover;
+	private boolean isSportsFan;
+	private boolean isFoodie;
+	private boolean isFashionFiend;
+	private boolean isBookWorm;
+	private boolean isOutdoorEntusiast;
+	private long weight;/**total weight of the token*/
 	
-	
-
-	public Personality(String personalityId, String fbId, String token, int musicLover, int sportsFan, int foodie,
-			int fashionFiend, int bookWorm, int outdoorEntusiast, int weight) {
+	public long getWeight() {
+		return weight;
+	}
+	public void setWeight(long weight) {
+		this.weight = weight;
+	}
+	public Personality(String personalityId, String fbId, String token, boolean isMusicLover, boolean isSportsFan,
+			boolean isFoodie, boolean isFashionFiend, boolean isBookWorm, boolean isOutdoorEntusiast, long weight) {
 		super();
 		this.personalityId = personalityId;
 		this.fbId = fbId;
 		this.token = token;
-		isMusicLover = musicLover;
-		isSportsFan = sportsFan;
-		isFoodie = foodie;
-		isFashionFiend = fashionFiend;
-		isBookWorm = bookWorm;
-		isOutdoorEntusiast = outdoorEntusiast;
+		this.isMusicLover = isMusicLover;
+		this.isSportsFan = isSportsFan;
+		this.isFoodie = isFoodie;
+		this.isFashionFiend = isFashionFiend;
+		this.isBookWorm = isBookWorm;
+		this.isOutdoorEntusiast = isOutdoorEntusiast;
 		this.weight = weight;
 	}
-	
 	public Personality() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
-
 	public String getPersonalityId() {
 		return personalityId;
 	}
@@ -53,49 +54,40 @@ public class Personality {
 	public void setToken(String token) {
 		this.token = token;
 	}
-	public int getMusicLover() {
+	public boolean isMusicLover() {
 		return isMusicLover;
 	}
-	public void setMusicLover(int musicLover) {
-		isMusicLover = musicLover;
+	public void setMusicLover(boolean isMusicLover) {
+		this.isMusicLover = isMusicLover;
 	}
-	public int getSportsFan() {
+	public boolean isSportsFan() {
 		return isSportsFan;
 	}
-	public void setSportsFan(int sportsFan) {
-		isSportsFan = sportsFan;
+	public void setSportsFan(boolean isSportsFan) {
+		this.isSportsFan = isSportsFan;
 	}
-	public int getFoodie() {
+	public boolean isFoodie() {
 		return isFoodie;
 	}
-	public void setFoodie(int foodie) {
-		isFoodie = foodie;
+	public void setFoodie(boolean isFoodie) {
+		this.isFoodie = isFoodie;
 	}
-	public int getFashionFiend() {
+	public boolean isFashionFiend() {
 		return isFashionFiend;
 	}
-	public void setFashionFiend(int fashionFiend) {
-		isFashionFiend = fashionFiend;
+	public void setFashionFiend(boolean isFashionFiend) {
+		this.isFashionFiend = isFashionFiend;
 	}
-	public int getBookWorm() {
+	public boolean isBookWorm() {
 		return isBookWorm;
 	}
-	public void setBookWorm(int bookWorm) {
-		isBookWorm = bookWorm;
+	public void setBookWorm(boolean isBookWorm) {
+		this.isBookWorm = isBookWorm;
 	}
-	public int getOutdoorEntusiast() {
+	public boolean isOutdoorEntusiast() {
 		return isOutdoorEntusiast;
 	}
-	public void setOutdoorEntusiast(int outdoorEntusiast) {
-		isOutdoorEntusiast = outdoorEntusiast;
+	public void setOutdoorEntusiast(boolean isOutdoorEntusiast) {
+		this.isOutdoorEntusiast = isOutdoorEntusiast;
 	}
-	public int getWeight() {
-		return weight;
-	}
-	public void setWeight(int weight) {
-		this.weight = weight;
-	}
-	
-	
-	
 }
