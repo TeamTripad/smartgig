@@ -5,7 +5,6 @@ import java.io.IOException;
 import java.sql.SQLException;
 
 import com.smartgig.database.connection.MyDBConnection;
-import com.smartgig.ecommerce.database.connection.MyEcommerceDBConnection;
 
 import net.didion.jwnl.JWNLException;
 
@@ -21,8 +20,5 @@ public class TestProcess {
 		PreprocessingEcommerce token = new PreprocessingEcommerce();
 //		token.addItemNameToken();
 		token.addItemBrandToke();
-		
-		
-	
 	}
 }

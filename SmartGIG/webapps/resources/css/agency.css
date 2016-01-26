@@ -268,6 +268,13 @@ fieldset[disabled] .btn-xl.active {
     background-color: #fed136;
 }
 
+/** JZAH 01-21-16 *************************************************************/
+.active {
+    border-radius: 0;
+    color: #fff;
+    background-color: #fed136;
+}
+/** JZAH 01-21-16 *************************************************************/
 .navbar-default .navbar-nav>.active>a:hover,
 .navbar-default .navbar-nav>.active>a:focus {
     color: #fff;
@@ -305,7 +312,7 @@ fieldset[disabled] .btn-xl.active {
     }
 }
 
-header, #intoBg {
+header{
     text-align: center;
     color: #fff;
     background-attachment: scroll;
@@ -317,6 +324,29 @@ header, #intoBg {
     background-size: cover;
     -o-background-size: cover;
 }
+
+/** USER POFILE JZAH 01-22-16 ***************************************/
+#userProfileBg{
+	text-align: center;
+    color: #fff;
+    background-attachment: scroll;
+    background-image: url(../img/header-bg.jpg);
+    background-position: center bottom;
+    background-repeat: none;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+/**.img-responsive {
+    max-width: 15%;
+}**/
+#t-user{
+	position: relative;
+	padding-top: 100px;
+}
+/** USER POFILE JZAH 01-22-16 ***************************************/
+
 header .prof{
     padding-top: 50px;
     padding-bottom: 25px;
@@ -680,13 +710,18 @@ section h3.section-subheading {
 }
 
 .team-member {
-    margin-bottom: 50px;
+    /** JZAH 01-21-16
+     margin-bottom: 50px;**/
+    margin-bottom: 15px;
     text-align: center;
 }
 
 .team-member img {
     margin: 0 auto;
+    /**JZAH 01-21-16
     border: 7px solid #fff;
+    **/
+    border: 4px solid #fff;
 }
 
 .team-member h4 {

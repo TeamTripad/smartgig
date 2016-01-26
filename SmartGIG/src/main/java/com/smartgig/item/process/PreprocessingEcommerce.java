@@ -5,8 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.smartgig.database.connection.MyDBConnection;
-import com.smartgig.ecommerce.database.dao.Product;
-import com.smartgig.ecommerce.database.connection.MyEcommerceDBConnection;
+import com.smartgig.database.dao.Product;
 import com.smartgig.facebook.process.Postagger;
 
 import edu.stanford.nlp.process.Morphology;
@@ -17,7 +16,7 @@ import net.didion.jwnl.JWNLException;
 
 public class PreprocessingEcommerce {
 
-	MyEcommerceDBConnection db = new MyEcommerceDBConnection();
+	MyDBConnection db = new MyDBConnection();
 
 
 	Morphology morph = new Morphology();

@@ -28,6 +28,7 @@ public class UserPersonality {
     public UserPersonality() {
     }
 
+    //Lauren    
     public UserPersonality(int userPersonalityId, String fbId, double musicLoverWeight, double sportsFanWeight, double foodieWeight, double fashionFiendWeight, double bookWormWeight, double outdoorEnthusiastWeight) {
         this.userPersonalityId = userPersonalityId;
         this.fbId = fbId;
@@ -39,7 +40,26 @@ public class UserPersonality {
         this.outdoorEnthusiastWeight = outdoorEnthusiastWeight;
     }
 
-    public UserPersonality(int userPersonalityId, String fbId, double musicLoverWeight, double sportsFanWeight, double foodieWeight, double fashionFiendWeight, double bookWormWeight, double outdoorEnthusiastWeight, double musicLoverPercentage, double sportsFanPercentage, double foodiePercentage, double fashionFiendPercentage, double bookWormPercentage, double outdoorEnthusiastPercentage) {
+    public UserPersonality(double musicLoverWeight, double sportsFanWeight, double foodieWeight,
+			double fashionFiendWeight, double bookWormWeight, double outdoorEnthusiastWeight,
+			double musicLoverPercentage, double sportsFanPercentage, double foodiePercentage,
+			double fashionFiendPercentage, double bookWormPercentage, double outdoorEnthusiastPercentage) {
+		super();
+		this.musicLoverWeight = musicLoverWeight;
+		this.sportsFanWeight = sportsFanWeight;
+		this.foodieWeight = foodieWeight;
+		this.fashionFiendWeight = fashionFiendWeight;
+		this.bookWormWeight = bookWormWeight;
+		this.outdoorEnthusiastWeight = outdoorEnthusiastWeight;
+		this.musicLoverPercentage = musicLoverPercentage;
+		this.sportsFanPercentage = sportsFanPercentage;
+		this.foodiePercentage = foodiePercentage;
+		this.fashionFiendPercentage = fashionFiendPercentage;
+		this.bookWormPercentage = bookWormPercentage;
+		this.outdoorEnthusiastPercentage = outdoorEnthusiastPercentage;
+	}
+
+	public UserPersonality(int userPersonalityId, String fbId, double musicLoverWeight, double sportsFanWeight, double foodieWeight, double fashionFiendWeight, double bookWormWeight, double outdoorEnthusiastWeight, double musicLoverPercentage, double sportsFanPercentage, double foodiePercentage, double fashionFiendPercentage, double bookWormPercentage, double outdoorEnthusiastPercentage) {
         this.userPersonalityId = userPersonalityId;
         this.fbId = fbId;
         this.musicLoverWeight = musicLoverWeight;

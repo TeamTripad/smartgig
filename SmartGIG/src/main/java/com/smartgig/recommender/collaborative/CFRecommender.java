@@ -14,7 +14,7 @@ import com.smartgig.database.dto.UserInfo;
 
 /**
  *
- * @author jzah
+ * @author lauren
  */ 
 public class CFRecommender implements CFConstants{
     /**
@@ -219,6 +219,7 @@ public class CFRecommender implements CFConstants{
         
         return s;
     }
+    
     public static double[] discretizeRatings(double[] weights, double min, double max){
         double[] rating = new double[weights.length];
         double over = max-(min-1);
