@@ -1,0 +1,12 @@
+com\smarthire\kent\dto\SiteStandardProfileRequest.class
+com\smarthire\kent\config\SecurityConfig.class
+com\smarthire\kent\controller\api\upwork\UpworkAPIController.class
+com\smarthire\kent\dto\AccessTokenResponse.class
+com\smarthire\kent\dto\LinkedInBasicProfile.class
+com\smarthire\kent\config\AppConfig.class
+com\smarthire\kent\dto\AccessAuthExchange.class
+com\smarthire\kent\controller\api\linkedin\LinkedInAPIController.class
+com\smarthire\kent\controller\HomeController.class
+com\smarthire\kent\config\core\SpringSecurityInitializer.class
+com\smarthire\kent\config\core\SpringMvcInitializer.class
+com\smarthire\kent\controller\api\linkedin\LinkedInREST.class

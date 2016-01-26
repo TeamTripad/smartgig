@@ -1,0 +1,19 @@
+/** Your theme modifications here **/
+<!--USER POFILE JZAH 01/21/16-->
+#user{
+	text-align: center;
+    color: #fff;
+    background-attachment: scroll;
+    background-image: url(../img/header-bg.jpg);
+    background-position: center bottom;
+    background-repeat: none;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+.user-profile-position {
+    margin-bottom: 25px;
+    text-align: center;
+}
+<!--USER POFILE JZAH 01/21/16-->
